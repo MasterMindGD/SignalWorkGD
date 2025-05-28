@@ -10,7 +10,6 @@ func _ready():
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
 	$RedGenerator.connect("button_down", Callable(self, "count_new_instance"))
 	$VioletGenerator.connect("button_down", Callable(self, "count_new_instance"))
-	$Reset.connect("button_down", Callable(self, "delete"))
 
 func count_new_instance():
 	instancesCount += 1
